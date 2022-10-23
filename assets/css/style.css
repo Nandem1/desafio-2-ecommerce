@@ -1,0 +1,133 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-areas:
+    "header header"
+    "menulateral contenido-principal"
+    "footer footer";
+}
+
+.grid-item-header {
+    grid-area: header;
+    background-color: #FF425C;
+    width: 100%;
+    height: 70px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: white;
+}
+
+.grid-item-menulateral {
+    grid-area: menulateral;
+    background-color: #E1E1E1;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+.grid-item-contenido-principal {
+    grid-area: contenido-principal;
+    background-color: #ECECEC;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30%;
+    text-align: center;
+    margin: 21px;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+.card img {
+    width: 90%;
+    height: 320px;
+    object-fit: cover;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+}
+
+h2 {
+    margin-top: 5px;
+}
+
+.precio {
+    margin-top: 10px;
+    color: rgb(89, 89, 89);
+}
+
+.btn {
+    background-color: #B7153C;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: #7b0e27;
+    cursor: pointer;
+}
+
+.grid-item-footer {
+    grid-area: footer;
+    background-color: #FF425C;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: white;
+}
+
+.flex-item-menu {
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #B7153C;
+}
+
+ul {
+    margin-top: 8px;
+}
+
+.menu-head {
+    font-weight: 500;
+}
+
+small {
+    color: rgba(0, 0, 0, 0.599);
+}
+
+.footer-text {
+    margin-left: 3px;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
